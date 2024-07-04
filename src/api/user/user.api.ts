@@ -26,7 +26,7 @@ app.get('/users/:id', async (req, res) => {
   try {
     const user = await UserService.getUserById(req.params.id);
     if (!user) {
-      return res.status(404).send();s
+      return res.status(404).send();
     }
     res.status(200).send(user);
   } catch (err) {

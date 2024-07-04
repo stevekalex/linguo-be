@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node dist/server.js",
     "build": "tsc",
     "boot": "tsc && node dist/server.js"
   },
@@ -19,7 +19,9 @@
     "typescript": "^5.5.2"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "openai": "^4.52.3",
     "pg": "^8.12.0"
   }
 }
